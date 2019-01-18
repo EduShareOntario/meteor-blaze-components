@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'peerlibrary:blaze-components',
-  summary: "Reusable components for Blaze",
-  version: '0.22.0',
-  git: 'https://github.com/peerlibrary/meteor-blaze-components.git'
+  name: 'edushareontario:blaze-components',
+  summary: "Reusable components for Blaze, with Coffeescript2 compatible dependencies!",
+  version: '0.22.1',
+  git: 'https://github.com/EduShareOntario/meteor-blaze-components.git'
 });
 
 // Based on meteor/packages/templating/package.js.
@@ -53,15 +53,15 @@ Package.onUse(function (api) {
 
   // Internal dependencies.
   api.use([
-    'peerlibrary:base-component@0.16.0'
+    'edushareontario:base-component@0.16.1'
   ]);
 
   // 3rd party dependencies.
   api.use([
     'peerlibrary:assert@0.2.5',
-    'peerlibrary:reactive-field@0.3.0',
-    'peerlibrary:computed-field@0.7.0',
-    'peerlibrary:data-lookup@0.1.0'
+    'peerlibrary:reactive-field@0.5.0',
+    'peerlibrary:computed-field@0.9.0',
+    'peerlibrary:data-lookup@0.2.1'
   ]);
 
   api.export('Template');
@@ -113,7 +113,7 @@ Package.onTest(function (api) {
   api.use([
     'peerlibrary:classy-test@0.2.26',
     'mquandalle:harmony@1.3.79',
-    'peerlibrary:reactive-field@0.3.0',
+    'peerlibrary:reactive-field@0.5.0',
     'peerlibrary:assert@0.2.5'
   ]);
 
